@@ -1,0 +1,46 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.head{
+	display: inline-block;
+}
+.labels{
+	width: 100px;
+	padding: 5px;
+	border: 1px solid #000;
+	text-align: left;
+	position: absolute;
+	top:50px;
+	left:60px;
+}
+.labels p{
+	border-bottom: 1px solid #000;
+}
+.results_panel{
+   border: 1px solid #000 !important;
+  position: absolute; 
+   top:50px;
+   left:60px;
+}
+.balls-table,.balls{
+	cursor:pointer;
+}
+svg{ 
+	border: 1px solid #000;
+	margin: 10px;
+}
+.balls-list{
+padding: 15px;
+}
