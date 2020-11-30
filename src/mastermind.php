@@ -44,11 +44,11 @@ class Mastermind{
 
 			if (in_array($look[$i], $_SESSION["START_VALUES"])) {
 				
-				$response["return"][$i] = "#fff";
+				$response["return"][$i] = "fff";
 		 			
 		 		if($_SESSION["START_VALUES"][$i] == $look[$i]){
 		 			
- 					$response["return"][$i] = "#000";
+ 					$response["return"][$i] = "000";
 		 			$response["position"][$i] = 1;
 		 		
 		 		}

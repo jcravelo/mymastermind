@@ -17,23 +17,26 @@
 	display: inline-block;
 }
 .labels{
-	width: 100px;
+	width: 250px;
 	padding: 5px;
 	border: 1px solid #000;
 	text-align: left;
 	position: absolute;
-	top:50px;
+	top:100px;
 	left:60px;
 }
-.labels p{
+.labels p,.panel p{
 	border-bottom: 1px solid #000;
 }
-.results_panel{
+.panel{
    border: 1px solid #000 !important;
-  position: absolute; 
-   top:50px;
-   left:60px;
+   position: absolute; 
+   padding: 5px;
+   top:100px;
+   right:60px;
+   width: 300px;
 }
+
 .balls-table,.balls{
 	cursor:pointer;
 }
@@ -42,5 +45,6 @@ svg{
 	margin: 10px;
 }
 .balls-list{
-padding: 15px;
+   padding: 15px;
 }
+.check{margin-left: 20px;}

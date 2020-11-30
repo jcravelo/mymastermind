@@ -24,27 +24,27 @@ include("src/checks.php");
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-5">Mastermind</h1><hr>
+    <h1 style="text-align: center;" class="mt-5">Mastermind</h1>
 		<div class="col-lg-12 balls-list">
-			<div class="head col-lg-2">
+			<div class="head col-lg-1">
 				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
 					<rect width="100%" height="100%" fill="#6d6b6b" value="1"></rect>
 					<text x="50%" y="50%" fill="#dee2e6" dy=".3em">?</text>
 				</svg>
 			</div>
-			<div class="head col-lg-2">
+			<div class="head col-lg-1">
 				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
 					<rect width="100%" height="100%" fill="#6d6b6b" value="2"></rect>
 					<text x="50%" y="50%" fill="#dee2e6" dy=".3em">?</text>
 				</svg>
 			</div>
-			<div class="head col-lg-2">
+			<div class="head col-lg-1">
 				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
 					<rect width="100%" height="100%" fill="#6d6b6b" value="3"></rect>
 					<text x="50%" y="50%" fill="#dee2e6" dy=".3em">?</text>
 				</svg>
 			</div>
-			<div class="head col-lg-2">
+			<div class="head col-lg-1">
 				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
 					<rect width="100%" height="100%" fill="#6d6b6b" value="4"></rect>
 					<text x="50%" y="50%" fill="#dee2e6" dy=".3em">?</text>
@@ -72,42 +72,18 @@ include("src/checks.php");
 		<hr>
 			<button id="restart" onclick='location.reload();'>Restart</button>
 		</div>
-		<br>
-		
-		<div class="results_panel">
-			<p>results panel</p>
-			<div class="head col-lg-2">
-				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-					<rect width="100%" height="100%" fill="red" class="balls-table"></rect>
-				</svg>
-			</div>
-			<div class="head col-lg-2">
-				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-					<rect width="100%" height="100%" fill="red" class="balls-table"></rect>
-				</svg>
-			</div>
-			<div class="head col-lg-2">
-				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-					<rect width="100%" height="100%" fill="red" class="balls-table"></rect>
-				</svg>
-			</div>
-			<div class="head col-lg-2">
-				<svg class="bd-placeholder-img rounded-circle" width="30" height="30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-					<rect width="100%" height="100%" fill="red" class="balls-table"></rect>
-				</svg>
-			</div>
-		</div>
+		<br><hr>
+
+		<aside class="panel">
+			<p style="text-align: center;">Results panel</p>
+			<div class="results"></div>
+		</aside>
 
   </div>
 
 
 </main>
 
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">Your are in the game</span>
-  </div>
-</footer>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="dist/js/jquery.livequery.min.js"></script>
 	<script type="text/javascript">var colorsJS=<?php echo json_encode($check->colors);?></script>
